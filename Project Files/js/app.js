@@ -157,7 +157,7 @@ navUn.addEventListener('click', function (event) {
 window.onscroll = function () {
     const sections = document.querySelectorAll('section');
     sections.forEach(section => {
-        var selector = `a[href="#${section.attributes.id.value}"]`;
+        let selector = `a[href="#${section.attributes.id.value}"]`;
         if(determineSection(section)) {
             if(!section.classList.contains("your-active-class"))
                 section.classList.add("your-active-class");
