@@ -5,14 +5,13 @@ A landing page project
 
 ## Table of Contents
 
-=> JavaScript
-=> Css Instructions
+JavaScript, Css Instructions
 
 ## Instructions
 
 *JavaScript:
 ------------
->>Global Variables :
+Global Variables :
 -------------------
 
 There are four global varibales  numberOfSections, sectionParent,  navUn and sectionContent .
@@ -24,41 +23,41 @@ sectionParent: is the header of the section (sections are dynamically added).
 sectionContent : for the content of the paragraphs.
 
 
->>Function Expression :
+Function Expression :
 ----------------------
 
-createSection: to create section dynamically.
+1]  createSection: to create section dynamically.
 
-createNavList: to create lists dynamically.
+2]  createNavList: to create lists dynamically.
 
-addSection: to addSection using a button(for  adding section in the future work).
+3]  addSection: to addSection using a button(for  adding section in the future work).
 
-buildNav: to build lists and sections(It uses createSections more that once).
+4]  buildNav: to build lists and sections(It uses createSections more that once).
 
 
->> Event Listeners:
+ Event Listeners:
 -------------------
 
-1] For Scrolling With style (For images).
+1]  Scrolling With style (For images).
 
-2] For Scrolling to the top .
+2]  Scrolling to the top .
 
-3] For Clicking on Section in navagation bar.
+3]  Clicking on Section in navagation bar.
 
-4] For Seting Active section.
+4]  Seting Active section.
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 *Css Instructions:
 ------------------
 
-1] Base Rules
+1]  Base Rules
 
-2] Typeography General
+2]  Typeography General
 
 3]  Module Rules
 
-4] Theme Rules 
+4]  Theme Rules 
 
 ------------------------------------------------------------------------------------------------------------------------------------------------------------
 
