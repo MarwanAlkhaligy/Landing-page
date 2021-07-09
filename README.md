@@ -3,11 +3,11 @@ A landing page project
 
 
 
-## Table of Contents
+# Table of Contents
 
 JavaScript, Css Instructions
 
-## Instructions
+# Instructions
 
 *JavaScript:
 ------------
