@@ -17,9 +17,9 @@
  * Define Global Variables
  * 
 */
-var numberOfSections = 0;
-var navUn = document.querySelector('#navbar__list');
-var sectionParent = document.querySelector('.main__hero');
+let numberOfSections = 0;
+let navUn = document.querySelector('#navbar__list');
+let sectionParent = document.querySelector('.main__hero');
 
 // this content is from https://spaceipsum.com/pale-blue-dot/ website  (lourn ipum content) if you are intersted  :) :P 
 
@@ -47,7 +47,7 @@ const sectionContent = ["There is no strife, no prejudice, no national conflict 
 
 
 // function expression to create Section dynamically
-var createSection = function () {
+let createSection = function () {
     numberOfSections++;
     let section = document.createElement('section');
     let sectionDiv = document.createElement('div');
@@ -70,7 +70,7 @@ var createSection = function () {
 };
 // build the nav
 // function expression to create list of the navigation list
-var createNavList = function () {
+let createNavList = function () {
     let sections = document.querySelectorAll('section');
     let fragment = document.createDocumentFragment();
     for (let i = 1; i < sections.length + 1; i++) {
@@ -86,7 +86,7 @@ var createNavList = function () {
 }
 
 // function expression to add section and list in th navigation unordered list
-var addSection = function () {
+let addSection = function () {
     createSection();
     let listItem = document.createElement('li');
     let anchor = document.createElement('a');
@@ -99,14 +99,14 @@ var addSection = function () {
     navUn.appendChild(listItem);
 };
 // function expression to build the sections and the lists of the navigation bar
-var buildNav = function(number) {
+let buildNav = function(number) {
     for( let i = 1; i <= number; i++) {
         createSection();
     }
     createNavList();
 }
 // function expression to determine if the section should be active;
-var determineSection = function(section){
+let determineSection = function(section){
     return (section.getBoundingClientRect().top>= 0 && section.getBoundingClientRect().top <= 280 );
 }
 
@@ -133,7 +133,7 @@ buildNav(5);
 // btn.addEventListener('click', function(){addSection();});
 
 // Scroll to the top: 
-var topElement = document.querySelector('#top__nav');
+let topElement = document.querySelector('#top__nav');
 console.log(topElement);
 topElement.addEventListener('click', function (event) {
     let element = document.querySelector('.section');
